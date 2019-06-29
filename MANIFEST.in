@@ -1,0 +1,2 @@
+include src/translation/de_DE.lang
+include src/translation/en_GB.lang
