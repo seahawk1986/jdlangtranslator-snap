@@ -8,9 +8,9 @@ setup(name='jdlangtranslator',
       author='JakobDev',
       author_email='jakobdev@gmx.de',
       url='https://gitlab.com/JakobDev/jdLangTranslator',
-      packages=['.'],
-      entry_points={
-          'console_scripts': ['jdLangTranslator = jdLangTranslator:main']
-          },
       include_package_data=True,
+      packages=['src'],
+      entry_points={
+          'console_scripts': ['jdLangTranslator = src.jdLangTranslator:main']
+          },
      )
