@@ -2,17 +2,15 @@
 
 from setuptools import setup
 
-setup(name='jslangtranslator',
+setup(name='jdlangtranslator',
       version='1.0',
       description='jdLangTranslator',
       author='JakobDev',
       author_email='jakobdev@gmx.de',
       url='https://gitlab.com/JakobDev/jdLangTranslator',
-      py_modules=['jdLangTranslator'],
+      packages=['.'],
       entry_points={
           'console_scripts': ['jdLangTranslator = jdLangTranslator:main']
           },
-      data_files=[
-          ('translation', ['translation/de_DE.lang', 'translation/en_GB.lang']),
-          ],
+      include_package_data=True,
      )
