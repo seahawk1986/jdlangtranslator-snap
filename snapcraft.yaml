@@ -1,0 +1,31 @@
+name: jdlangtranslator
+version: 1.0
+summary: jdLangTranslator
+description: |
+  A translator for .lang files.
+base: core18
+confinement: strict
+grade: stable
+
+parts:
+  jdlangtranslator:
+    plugin: python
+    python-version: python3
+    source: .
+    python-packages:
+      - pyqt5
+    stage-packages:
+      - python3-setuptools
+
+
+apps:
+  jdlangtranslator:
+    command: bin/jdLangTranslator
+    plugs:
+      - x11
+      - home
+      - browser-support
+      - desktop-legacy
+      - desktop
+      - media-hub
+      - removable-media
